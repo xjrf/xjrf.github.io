@@ -1,0 +1,70 @@
+backend:
+  name: github
+  repo: xjrf/blog-source
+  branch: main
+  base_url: https://YOUR-OAUTH-PROXY.example.com
+  auth_endpoint: auth
+
+local_backend: true
+
+media_folder: static/uploads
+public_folder: /static/uploads
+
+site_url: https://xjrf.github.io
+display_url: https://xjrf.github.io
+logo_url: /static/modern/image/logo-mark.svg
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: content/posts
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    summary: "{{title}} · {{date}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", time_format: false }
+      - { label: Tags, name: tags, widget: list, required: false, default: [] }
+      - { label: Category, name: category, widget: string, required: false, default: "Uncategorized" }
+      - { label: Excerpt, name: excerpt, widget: text, required: false }
+      - { label: Cover, name: cover, widget: string, required: false }
+      - { label: Draft, name: draft, widget: boolean, required: false, default: false }
+      - { label: Series, name: series, widget: string, required: false }
+      - { label: Series Order, name: series_order, widget: number, required: false, value_type: int, min: 1 }
+      - { label: Language, name: lang, widget: select, required: false, options: ["", "en", "zh"] }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: identity
+    label: Identity
+    files:
+      - label: Bookmarks
+        name: bookmarks
+        file: content/identity/bookmarks.yml
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Period Label, name: period_label, widget: string }
+          - label: Items
+            name: items
+            widget: list
+            summary: "{{fields.kind}} · {{fields.title}}"
+            fields:
+              - label: Kind
+                name: kind
+                widget: select
+                options: ["reading", "watching", "listening"]
+              - { label: Title, name: title, widget: string }
+              - { label: Creator, name: creator, widget: string, required: false }
+              - { label: URL, name: url, widget: string, required: false }
+              - { label: Note, name: note, widget: text, required: false }
+              - { label: Added On, name: added_on, widget: datetime, format: "YYYY-MM-DD", time_format: false, required: false }
+              - { label: Rating, name: rating, widget: number, required: false, value_type: int, min: 1, max: 5 }
+
+      - label: Guestbook
+        name: guestbook
+        file: content/identity/guestbook.yml
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro Markdown, name: intro_md, widget: markdown }

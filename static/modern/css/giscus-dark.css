@@ -1,0 +1,32 @@
+:root {
+    color-scheme: dark;
+    --color-canvas-default: #282726;
+    --color-canvas-subtle: #343331;
+    --color-border-default: #3d3c3a;
+    --color-border-muted: #343331;
+    --color-fg-default: #cecdc3;
+    --color-fg-muted: #9a988f;
+    --color-accent-fg: #66a0c8;
+    --color-accent-emphasis: #66a0c8;
+    --color-accent-muted: rgba(102, 160, 200, 0.2);
+    --color-btn-primary-bg: #4385be;
+    --color-btn-primary-hover-bg: #66a0c8;
+    --color-btn-primary-text: #0f0f0f;
+    --color-btn-primary-border: #4385be;
+    --color-neutral-muted: rgba(255, 255, 255, 0.08);
+    --borderRadius-small: 0px;
+    --borderRadius-medium: 0px;
+    --borderRadius-large: 0px;
+    --borderRadius-full: 0px;
+    --control-borderRadius: 0px;
+}
+
+body {
+    background: var(--color-canvas-default);
+}
+
+*,
+*::before,
+*::after {
+    border-radius: 0 !important;
+}

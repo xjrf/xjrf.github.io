@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xjrf's Blog</title>
+    <link>https://xjrf.github.io/</link>
+    <description></description>
+    <language>en</language>
+    <atom:link href="https://xjrf.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Mon, 16 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title><![CDATA[RFSoC学习 05 - 多Tile同步（MTS）]]></title>
+      <link>https://xjrf.github.io/post/rfsoc-04-mts.html</link>
+      <guid>https://xjrf.github.io/post/rfsoc-04-mts.html</guid>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Multi-Tile Synchronization机制讲解]]></description>
+      <category>RFSoC</category>
+    </item>
+    <item>
+      <title><![CDATA[RFSoC学习 04 - RF-DAC 架构]]></title>
+      <link>https://xjrf.github.io/post/rfsoc-03-rfadc.html</link>
+      <guid>https://xjrf.github.io/post/rfsoc-03-rfadc.html</guid>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[RF-DAC tile结构、特性和数据路径讲解]]></description>
+      <category>RFSoC</category>
+    </item>
+    <item>
+      <title><![CDATA[RFSoC学习 03 - RF-ADC 架构]]></title>
+      <link>https://xjrf.github.io/post/rfsoc-02-rfadc.html</link>
+      <guid>https://xjrf.github.io/post/rfsoc-02-rfadc.html</guid>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[RF-ADC tile结构、特性和数据路径讲解]]></description>
+      <category>RFSoC</category>
+    </item>
+    <item>
+      <title><![CDATA[RFSoC学习 02 - 概览]]></title>
+      <link>https://xjrf.github.io/post/rfsoc-01-overview.html</link>
+      <guid>https://xjrf.github.io/post/rfsoc-01-overview.html</guid>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[Zynq UltraScale+ RFSoC架构概览]]></description>
+      <category>RFSoC</category>
+    </item>
+    <item>
+      <title><![CDATA[RFSoC学习 01 - 序]]></title>
+      <link>https://xjrf.github.io/post/rfsoc-00-index.html</link>
+      <guid>https://xjrf.github.io/post/rfsoc-00-index.html</guid>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[个人学习 Xilinx RFSoC 的笔记]]></description>
+      <category>RFSoC</category>
+    </item>
+  </channel>
+</rss>
